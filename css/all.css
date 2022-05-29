@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+:root {
+  --green:#3F5D45;
+  --light:#EAF0ED;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  color: var(--green);
+  font-family: "PingFang TC ", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 940px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .logo img {
+  display: block;
+  width: 211px;
+  height: 40px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu ul li {
+  margin-left: 40px;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px;
+  color: var(--green);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.menu ul li a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: underline;
+  background: var(--green);
+  color: var(--light);
+}
+
+.cart {
+  margin-left: 69px;
+}
+
+.cart img {
+  display: block;
+}
+
+.banner img {
+  width: 940px;
+  height: 496px;
+  margin-top: 30px;
+  display: block;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+aside {
+  font-size: 24px;
+  width: 300px;
+}
+
+aside .type {
+  background-color: var(--green);
+  color: #EAF0ED;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+}
+
+aside ul li {
+  border: 1px solid var(--light);
+  text-align: center;
+  width: 300px;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+aside ul li a:hover {
+  text-decoration: underline;
+}
+
+aside .all {
+  background-color: var(--light);
+}
+
+.content {
+  width: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.img {
+  width: 300px;
+  height: 315px;
+  position: relative;
+}
+
+.img .selected {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: var(--light);
+  background: var(--green);
+  padding: 12px 10px;
+  letter-spacing: 5px;
+}
+
+.img .favorite {
+  position: absolute;
+  top: 19px;
+  right: 22px;
+}
+
+.img .favorite img {
+  display: block;
+}
+
+.info {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 14px 0;
+  border: 1px solid var(--light);
+}
+
+.info .product {
+  font-weight: 200;
+  width: 173px;
+  border-right: 1px solid var(--light);
+}
+
+.info .price {
+  width: 127px;
+}
+
+.cartShop {
+  width: 100%;
+  height: 65px;
+  color: var(--green);
+  font-size: 24px;
+  font-weight: 500;
+  border: 1px solid var(--light);
+  background: var(--light);
+}
+
+.cartShop:hover {
+  color: var(--light);
+  background: var(--green);
+  cursor: pointer;
+}
+
+.cartShop:active {
+  border: 1px solid var(--green);
+}
+
+.pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pagination ul li a {
+  font-weight: lighter;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  border: 1px solid #EAF0ED;
+  color: #3F5D45;
+}
+
+.pagination ul li a:hover {
+  background-color: antiquewhite;
+  text-decoration: underline;
+}
+
+.pagination ul li a img {
+  display: block;
+  padding: 18px;
+}
+/*# sourceMappingURL=all.css.map */
